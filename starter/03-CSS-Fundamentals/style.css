@@ -33,6 +33,7 @@ body {
 
 nav {
 	font-size: 18px;
+	/* text-align: center; */
 }
 
 article {
@@ -153,9 +154,9 @@ li:last-child {
 	font-style: italic;
 }
 
-li:nth-child(even) {
-	/* color: red; */
-}
+/* li:nth-child(even) {
+	color: red;
+} */
 
 /* Misconception won't work */
 article p:first-child {
@@ -199,6 +200,7 @@ nav a:link {
 	margin-right: 30px;
 	margin-top: 10px;
 	display: inline-block;
+	/* text-align: center; */
 }
 nav a:link:last-child {
 	margin-right: 0;
@@ -220,15 +222,15 @@ h1::first-letter {
 	margin-right: 5px;
 }
 
-h3 + p::first-line {
-	/* color: red; */
-}
+/* h3 + p::first-line {
+	color: red;
+} */
 
 h2 {
 	position: relative;
 }
 
-h2::after {
+h2::before {
 	content: "TOP";
 	background-color: #ffe70e;
 	color: black;
