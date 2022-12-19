@@ -11,8 +11,12 @@
 
     Line Heights: 
       Defaults: 1
-      1.05
+      Small: 1.05, 1.02
       Paragraph Default 1.6
+
+    Letter Spacing: 
+    .5px
+    .75px
     
   02 Colors
   
@@ -51,13 +55,36 @@ body {
 /* *************************** */
 /* General Reusable Components */
 /* *************************** */
+
+.heading-primary,
+.heading-secondary {
+	font-weight: 700;
+	color: #333;
+	/* color: #2e1907;
+	color: #45260a; */
+	letter-spacing: -0.5px;
+}
+
 .heading-primary {
 	font-size: 5.2rem;
 	line-height: 1.05;
-	font-weight: 700;
-	color: #333;
-	letter-spacing: -0.5px;
 	margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+	font-size: 4.4rem;
+	line-height: 1.2;
+	margin-bottom: 9.6rem;
+}
+
+.subheading {
+	display: block;
+	font-size: 2rem;
+	font-weight: 500;
+	color: #cf711f;
+	margin-bottom: 1.6rem;
+	text-transform: uppercase;
+	letter-spacing: 0.75px;
 }
 
 .btn:link,
@@ -247,5 +274,7 @@ body {
 
 .section-how {
 	padding: 9.6rem 0;
-	background-color: orangered;
+}
+.step-img {
+	width: 50%;
 }
