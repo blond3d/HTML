@@ -183,6 +183,7 @@ body {
 	max-width: 120rem;
 	margin: 0 auto;
 	padding: 0 3.2rem;
+	margin-bottom: 9.6rem;
 }
 
 .grid {
@@ -190,6 +191,14 @@ body {
 	row-gap: 9.6rem;
 	column-gap: 6.4rem;
 	grid-template-columns: repeat(2, 1fr);
+}
+
+/* .grid:last-child {
+	margin-bottom: 0;
+} */
+
+.grid:not(:last-child) {
+	margin-bottom: 9.6rem;
 }
 
 .grid--center-v {
