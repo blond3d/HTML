@@ -30,6 +30,7 @@
 
   06 Border Radius
     Default: 9px
+    Medium: 11px
   07 White Space
 
     */
@@ -162,4 +163,8 @@ body {
 }
 .grid--4-cols {
 	grid-template-columns: repeat(4, 1fr);
+}
+
+strong {
+	font-weight: 500;
 }
