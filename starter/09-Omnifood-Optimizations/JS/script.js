@@ -23,6 +23,34 @@ const header = document.querySelector(".header");
 btnNav.addEventListener("click", function () {
 	header.classList.toggle("nav-open");
 });
+////////////////////////////////////
+//smooth scrolling
+
+const allLinks = document.querySelectorAll("a:link");
+console.log(allLinks);
+allLinks.forEach(function (link) {
+	link.addEventListener("click", function (e) {
+		e.preventDefault();
+		const href = link.getAttribute("href");
+		// console.log(href);
+
+		//scroll back top
+		if (href === "#")
+			window.scrollTo({
+				top: 0,
+				behavior: "smooth",
+			});
+		//scroll to other links
+		if (href !== "#" && href.startsWith("#")) {
+			const section = document.querySelector(href);
+			section.scrollIntoView({ behavior: "smooth" });
+		}
+
+		/////CLOSE NAV
+		if (link.classList.contains("main-nav-link"))
+			header.classList.toggle("nav-open");
+	});
+});
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
